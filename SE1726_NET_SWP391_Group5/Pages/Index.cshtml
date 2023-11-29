@@ -1,0 +1,52 @@
+﻿@page
+@model SE1726_NET_SWP391_Group5.Pages.IndexModel
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+<div style="text-align: center; margin-top: 50px;">
+    <div style="margin-bottom: 20px;">
+        <h3>Category</h3>
+    </div>
+    <div class="div_list">
+        @foreach (var c in Model.Categories)
+        {
+            <div style="position: relative; text-align: center;">
+                <img class="div_list_img" src="~/img/2.jpg" />
+                <span class="div_list_span">
+                    <a class="div_list_span_a" asp-page="Index" asp-route-categoryName="@c.CategoryName">
+                        @c.CategoryName
+                    </a>
+                </span>
+            </div>
+        }
+    </div>
+</div>
+
+<div style="text-align:center;">
+    <div style="margin-top:50px;">
+        <div>
+            <h3>Hot Products </h3>
+        </div>
+        <div class="div_list">
+            @foreach (var p in Model.Hot)
+            {
+                <div style="width:150px; height:250px; background-color:aqua; margin:20px;">
+                    <img style="width:150px; height:170px;" src="~/img/1.jpg" />
+                    <div style="width:150px; height:50px; background-color:burlywood;">
+                        @if (p.ProductName.Length > 20)
+                        {
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Product/Detail" asp-route-pid="@p.ProductId" style="font-size:14px;">@p.ProductName.Substring(0,20)</a>
+                        }
+                        else
+                        {
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Product/Detail" asp-route-pid="@p.ProductId" style="font-size:14px;">@p.ProductName</a>
+                        }
+                    </div>
+                    <div style="width:150px; height:30px;">@p.UnitPrice</div>
+                    <a class="btn btn-info" asp-page="/Cart/AddToCart" asp-route-productId="@p.ProductId">
+                            Add To Cart
+                    </a>
+                </div>
+            }
+        </div>
+    </div>
+</div>

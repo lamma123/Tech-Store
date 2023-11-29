@@ -1,0 +1,173 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = SE1726_NET_SWP391_Group5
+build_property.RootNamespace = SE1726_NET_SWP391_Group5
+build_property.ProjectDir = C:\Users\my pc\Desktop\swp391group5\SE1726_NET_SWP391_Group5\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\my pc\Desktop\swp391group5\SE1726_NET_SWP391_Group5
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/my pc/Desktop/swp391group5/SE1726_NET_SWP391_Group5/Pages/Account/ForgotPassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudFxGb3Jnb3RQYXNzd29yZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/my pc/Desktop/swp391group5/SE1726_NET_SWP391_Group5/Pages/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/my pc/Desktop/swp391group5/SE1726_NET_SWP391_Group5/Pages/Account/Logout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudFxMb2dvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/my pc/Desktop/swp391group5/SE1726_NET_SWP391_Group5/Pages/Account/Profile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudFxQcm9maWxlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/my pc/Desktop/swp391group5/SE1726_NET_SWP391_Group5/Pages/Account/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/my pc/Desktop/swp391group5/SE1726_NET_SWP391_Group5/Pages/Admin/ManagerEmployees.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cTWFuYWdlckVtcGxveWVlcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/my pc/Desktop/swp391group5/SE1726_NET_SWP391_Group5/Pages/Cart/AddToCart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2FydFxBZGRUb0NhcnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/my pc/Desktop/swp391group5/SE1726_NET_SWP391_Group5/Pages/Cart/Checkout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2FydFxDaGVja291dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/my pc/Desktop/swp391group5/SE1726_NET_SWP391_Group5/Pages/Cart/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2FydFxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/my pc/Desktop/swp391group5/SE1726_NET_SWP391_Group5/Pages/Cart/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2FydFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/my pc/Desktop/swp391group5/SE1726_NET_SWP391_Group5/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/my pc/Desktop/swp391group5/SE1726_NET_SWP391_Group5/Pages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/my pc/Desktop/swp391group5/SE1726_NET_SWP391_Group5/Pages/MarketingStaff/CreateVoucher.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWFya2V0aW5nU3RhZmZcQ3JlYXRlVm91Y2hlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/my pc/Desktop/swp391group5/SE1726_NET_SWP391_Group5/Pages/MarketingStaff/PostController/CreatePost.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWFya2V0aW5nU3RhZmZcUG9zdENvbnRyb2xsZXJcQ3JlYXRlUG9zdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/my pc/Desktop/swp391group5/SE1726_NET_SWP391_Group5/Pages/MarketingStaff/PostController/CustomerPost.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWFya2V0aW5nU3RhZmZcUG9zdENvbnRyb2xsZXJcQ3VzdG9tZXJQb3N0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/my pc/Desktop/swp391group5/SE1726_NET_SWP391_Group5/Pages/MarketingStaff/PostController/DeletePost.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWFya2V0aW5nU3RhZmZcUG9zdENvbnRyb2xsZXJcRGVsZXRlUG9zdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/my pc/Desktop/swp391group5/SE1726_NET_SWP391_Group5/Pages/MarketingStaff/PostController/DetailPost.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWFya2V0aW5nU3RhZmZcUG9zdENvbnRyb2xsZXJcRGV0YWlsUG9zdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/my pc/Desktop/swp391group5/SE1726_NET_SWP391_Group5/Pages/MarketingStaff/PostController/EditPost.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWFya2V0aW5nU3RhZmZcUG9zdENvbnRyb2xsZXJcRWRpdFBvc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/my pc/Desktop/swp391group5/SE1726_NET_SWP391_Group5/Pages/MarketingStaff/PostController/GuestPost.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWFya2V0aW5nU3RhZmZcUG9zdENvbnRyb2xsZXJcR3Vlc3RQb3N0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/my pc/Desktop/swp391group5/SE1726_NET_SWP391_Group5/Pages/MarketingStaff/PostController/Post.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWFya2V0aW5nU3RhZmZcUG9zdENvbnRyb2xsZXJcUG9zdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/my pc/Desktop/swp391group5/SE1726_NET_SWP391_Group5/Pages/MarketingStaff/Voucher.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWFya2V0aW5nU3RhZmZcVm91Y2hlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/my pc/Desktop/swp391group5/SE1726_NET_SWP391_Group5/Pages/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/my pc/Desktop/swp391group5/SE1726_NET_SWP391_Group5/Pages/Seller/Order.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2VsbGVyXE9yZGVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/my pc/Desktop/swp391group5/SE1726_NET_SWP391_Group5/Pages/Seller/Product/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2VsbGVyXFByb2R1Y3RcQWRkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/my pc/Desktop/swp391group5/SE1726_NET_SWP391_Group5/Pages/Seller/Product/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2VsbGVyXFByb2R1Y3RcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/my pc/Desktop/swp391group5/SE1726_NET_SWP391_Group5/Pages/Seller/Product/Manage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2VsbGVyXFByb2R1Y3RcTWFuYWdlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/my pc/Desktop/swp391group5/SE1726_NET_SWP391_Group5/Pages/Seller/Product/Update.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2VsbGVyXFByb2R1Y3RcVXBkYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/my pc/Desktop/swp391group5/SE1726_NET_SWP391_Group5/Pages/Shared/_Layout1.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQxLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/my pc/Desktop/swp391group5/SE1726_NET_SWP391_Group5/Pages/Shared/_Layout2.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/my pc/Desktop/swp391group5/SE1726_NET_SWP391_Group5/Pages/Shared/_Layout3.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/my pc/Desktop/swp391group5/SE1726_NET_SWP391_Group5/Pages/Shared/_Layout4.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQ0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/my pc/Desktop/swp391group5/SE1726_NET_SWP391_Group5/Pages/Shared/_Layout5.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQ1LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/my pc/Desktop/swp391group5/SE1726_NET_SWP391_Group5/Pages/Shared/_Paging.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9QYWdpbmcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/my pc/Desktop/swp391group5/SE1726_NET_SWP391_Group5/Pages/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/my pc/Desktop/swp391group5/SE1726_NET_SWP391_Group5/Pages/Shipper/Order/Detail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hpcHBlclxPcmRlclxEZXRhaWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/my pc/Desktop/swp391group5/SE1726_NET_SWP391_Group5/Pages/Shipper/Order/List.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hpcHBlclxPcmRlclxMaXN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/my pc/Desktop/swp391group5/SE1726_NET_SWP391_Group5/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/my pc/Desktop/swp391group5/SE1726_NET_SWP391_Group5/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/my pc/Desktop/swp391group5/SE1726_NET_SWP391_Group5/Pages/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-kmp3hofdf7

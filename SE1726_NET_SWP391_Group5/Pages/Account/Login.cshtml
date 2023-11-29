@@ -1,0 +1,45 @@
+﻿@page
+@model SE1726_NET_SWP391_Group5.Pages.Account.LoginModel
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@{
+}
+<div style="width: 400px;height:500px;background-color:blanchedalmond;margin: 80px auto;">
+    <h3 style="text-align: center;padding: 20px;font-weight:bold;">
+        Login
+    </h3>
+    <div style="margin: 20px 20px; color: red">@TempData["msg"]</div>
+    <form method="post">
+        <div style="margin: 20px 20px;">
+            <label for="email">Email</label>
+            <input asp-for="Account.Email" type="text" style="width: 100%" />
+            <span class="msg-error" style="color:red" asp-validation-for="Account.Email"></span><br />
+        </div>
+        <div style="margin: 20px 20px;">
+            <label for="password">Password</label>
+            <input id="passwordInput" asp-for="Account.Password" type="password" style="width: 100%" />
+            <span class="msg-error" style="color:red" asp-validation-for="Account.Password"></span><br />
+        </div>
+        <div style="margin: 20px 20px;">
+            <input type="checkbox" id="showPasswordCheckbox">
+            <label style="font-family:Courier new;" for="showPasswordCheckbox">Show password</label>
+        </div>
+        <div style="margin: 30px 20px;">
+            <input type="submit" value="Login" style="width: 100%" class="btn btn-success" />
+        </div>
+        <div style="margin: 20px 20px;">
+            <a asp-area="" asp-page="/Account/ForgotPassword">Forget password?</a>
+        </div>
+    </form>
+</div>
+<script>
+    var showPasswordCheckbox = document.getElementById("showPasswordCheckbox");
+    var passwordInput = document.getElementById("passwordInput");
+
+    showPasswordCheckbox.addEventListener('change', function () {
+        if (this.checked) {
+            passwordInput.type = "text";
+        } else {
+            passwordInput.type = "password";
+        }
+    });
+</script>

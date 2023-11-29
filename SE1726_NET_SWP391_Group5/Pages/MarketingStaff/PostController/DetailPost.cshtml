@@ -1,0 +1,39 @@
+﻿@page
+@model SE1726_NET_SWP391_Group5.Pages.PostController.DetailPostModel
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+
+
+<div style="height:300px; margin-top:50px;">
+    <div style="float: left;width: 30%;height: 300px; text-align:center;">
+        <img style="width:200px; height:250px; margin: 25px 0;" src="~/img/3.jpg"/>
+    </div>
+    <div style="height: 300px; display:grid;background-color:aliceblue;word-wrap: break-word;" >
+        
+        <div style="margin: 25px 0 0 10px;">
+            <span style="font-weight:bold;">
+                Post Title:
+            </span> 
+            <span>
+                @Model.Post.PostTitle
+            </span>
+            </div>
+        <div style="margin: 25px 0 0 10px;">
+            <span style="font-weight:bold;overflow-wrap: break-word;">
+                Post Content:
+            </span>
+            
+                <div style="width:900px;word-wrap: break-word;">@Model.Post.PostContent</div>
+            
+            </div>
+        <div style="margin: 25px 0 0 10px; display:flex;">
+            <div style="font-weight:bold;">
+                Employee ID: @Model.Post.EmployeeId
+            </div>
+        </div>
+        <div style="margin: 25px 0 0 10px; display:flex;">
+            <div style="font-weight:bold;">
+               Published Date: @Model.Post.PublishedDate
+            </div>
+    </div>
+</div>

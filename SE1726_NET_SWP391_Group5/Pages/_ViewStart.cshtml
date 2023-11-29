@@ -1,0 +1,26 @@
+﻿@{
+    if (Context.Session.GetString("seller") != null)
+    {
+        Layout = "_Layout1";
+    }
+    else if (Context.Session.GetString("customer") != null)
+    {
+        Layout = "_Layout2";
+    }
+    else if (Context.Session.GetString("marketing") != null)
+    {
+        Layout = "_Layout3";
+    }
+    else if (Context.Session.GetString("shipper") != null)
+    {
+        Layout = "_Layout4";
+    }
+    else if (Context.Session.GetString("admin") != null)
+    {
+        Layout = "_Layout5";
+    }
+    else
+    {
+        Layout = "_Layout";
+    }
+}

@@ -1,0 +1,134 @@
+﻿@page
+@model SE1726_NET_SWP391_Group5.Pages.PostController.PostModel
+
+<h1 style="text-align:center">Post Management</h1>
+
+<a asp-page="/MarketingStaff/PostController/CreatePost" class="btn btn-primary">Add Post</a>
+<style>
+    .table th, .table td {
+        max-width: 100px; /* Giới hạn kích thước cột tối đa là 200px */
+        white-space: nowrap; /* Ngăn dòng tự động xuống khi vượt quá kích thước */
+        overflow: hidden; /* Ẩn nội dung vượt quá kích thước cột */
+        text-overflow: ellipsis; /* Hiển thị dấu ba chấm (...) khi nội dung vượt quá */
+    }
+
+    /* Trang chính */
+    body {
+        background-color: #f0f0f0;
+        font-family: Arial, sans-serif;
+    }
+
+    /* Tiêu đề */
+    h2 {
+        color: #333;
+    }
+
+    /* Các nút thêm và xóa */
+    .btn {
+        background-color: #007bff;
+        color: #fff;
+    }
+
+    /* Bảng dữ liệu */
+    table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    table, th, td {
+        border: 1px solid #ccc;
+    }
+
+    /* Các nút Sửa và Xóa trong bảng */
+    .btn-warning {
+        background-color: #ffc107;
+        color: #333;
+    }
+
+    .btn-danger {
+        background-color: #dc3545;
+        color: #fff;
+    }
+
+    /* Phần tiêu đề trang */
+    .page-header {
+        background-color: #007bff;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+    }
+
+    /* Khoảng cách giữa các phần tử */
+    .container {
+        margin: 20px;
+    }
+
+    /* Giao diện form */
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+    /* Trường dữ liệu đầu vào */
+    .form-control {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+</style>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Post ID</th>
+            <th>Post Title</th>
+            <th>Post Content</th>
+            <th>Employee ID</th>
+            <th>Published Date</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var post in Model.Posts)
+        {
+            <tr>
+                <td>
+                    @if (post.PostId > 0) // Kiểm tra xem PostId có giá trị không null
+                {
+                    @post.PostId.Value
+                }
+                </td>
+                <td>
+                    @if (!string.IsNullOrEmpty(post.PostTitle)) //Kiểm tra PostTitle có giá trị không rỗng
+                {
+                    @post.PostTitle
+                }
+                </td>
+                <td>
+                    @if (!string.IsNullOrEmpty(post.PostContent)) // Kiểm tra xem PostContent có giá trị không rỗng 
+                {
+                    @post.PostContent
+                }
+                </td>
+                <td>
+                    @if (post.EmployeeId.HasValue) // Kiểm tra xem EmployeeID có giá trị không null
+                {
+                    @post.EmployeeId.Value
+                }
+                </td>
+                <td>
+                    @if (post.PublishedDate.HasValue) // Kiểm tra xem PublishedDate có giá trị không null 
+                {
+                    @post.PublishedDate.Value.ToShortDateString()
+                }
+                </td>              
+                <td>
+                    <a asp-page="/MarketingStaff/PostController/EditPost" asp-route-id="@post.PostId" class="btn btn-warning">Edit</a>
+                    <a asp-page="/MarketingStaff/PostController/DetailPost" asp-route-id="@post.PostId" class="btn btn-info">Detail</a>
+                    <a asp-page="/MarketingStaff/PostController/DeletePost" asp-route-id="@post.PostId" class="btn btn-danger">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+

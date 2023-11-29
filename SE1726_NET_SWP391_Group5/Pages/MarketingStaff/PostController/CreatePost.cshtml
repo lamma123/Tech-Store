@@ -1,0 +1,35 @@
+﻿@page
+@model SE1726_NET_SWP391_Group5.Pages.PostController.CreatePostModel
+
+
+<h1 style="text-align:center">Add Post</h1>
+
+<form method="post">
+    <div class="form-group">
+        <dt>Post Title:</dt>
+        
+        <input asp-for="Post.PostTitle" class="form-control" />
+        <span asp-validation-for="Post.PostTitle" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <dt>Post Content:</dt>
+        
+        <textarea asp-for="Post.PostContent" class="form-control" rows="4"></textarea>
+        <span asp-validation-for="Post.PostContent" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <dt>Employee ID:</dt>
+        
+        <input asp-for="Post.EmployeeId" class="form-control" />
+        <span asp-validation-for="Post.EmployeeId" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <dt>Published Date:</dt>
+        
+        <input asp-for="Post.PublishedDate" class="form-control" />
+        <span asp-validation-for="Post.PublishedDate" class="text-danger"></span>
+    </div>
+    
+    <button type="submit" class="btn btn-primary">Success</button>
+    <a asp-page="/PostController/Post" class="btn btn-secondary">Cancel</a>
+</form>

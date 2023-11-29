@@ -1,0 +1,35 @@
+﻿@page
+@model SE1726_NET_SWP391_Group5.Pages.PostController.DeletePostModel
+@{
+    ViewData["Title"] = "Confirm deletion of post";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+@if (Model.Post != null)
+{
+    <p>Are you sure you want to delete the following post ?</p>
+    <dl class="dl-horizontal">
+        <dt>Post ID :</dt>
+        <dd>@Model.Post.PostId</dd>
+        <dt>Post Title:</dt>
+        <dd>@Model.Post.PostTitle</dd>
+        <dt>Post Content:</dt>
+        <dd>@Model.Post.PostContent</dd>
+        <dt>Employee ID:</dt>
+        <dd>@Model.Post.EmployeeId</dd>
+        <dt>Published Date:</dt>
+        <dd>@Model.Post.PublishedDate</dd>
+        
+    </dl>
+
+    <form method="post">
+        <input type="hidden" asp-for="Post.PostId" />
+        <button type="submit" class="btn btn-danger">Delete</button>
+        <a asp-page="/PostController/Post" class="btn btn-secondary">Cancel</a>
+    </form>
+}
+else
+{
+    <p>Post does not exist or has been deleted.</p>
+}

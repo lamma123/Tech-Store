@@ -1,0 +1,79 @@
+﻿@page
+@model SE1726_NET_SWP391_Group5.Pages.Cart.CheckoutModel
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@{
+}
+<style>
+    .form-row {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+        .form-row label {
+            width: 30%;
+            font-size: 16px;
+            transition: padding 0.2s;
+            /* Căn lề trái cho label */
+            text-align: left; 
+            /* Đảm bảo không có padding bên trái */
+            padding-left: 100px; 
+            /* Loại bỏ màu nền xám */
+            background-color: transparent; 
+        }
+
+            .form-row label:hover {
+                padding-left: 5px;
+                background-color: #f0f0f0;
+            }
+
+        .form-row input {
+            width: 70%;
+            font-size: 16px;
+            /* Thêm margin bên trái để lùi vào */
+            padding-right: 100px; 
+        }
+
+    .btn-primary {
+        background-color: #007BFF;
+        color: #fff;
+        padding: 10px 20px;
+        box-sizing: border-box;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+</style>
+
+<h2 style="padding-left: 100px"> Checkout</h2>
+<hr />
+<form method="post" asp-page-handler="Checkout" style="text-align:center">
+    <div class="form-row">
+        <label class="col-md-3">ShipAddress</label>
+        <input required="true" asp-for="@Model.Order.Address" class="form-control col-md-9" />
+    </div>
+
+    <div class="form-row">
+        <label class="col-md-3">ShipCity</label>
+        <input required="true" asp-for="@Model.Order.City" class="form-control col-md-9" />
+    </div>
+
+    <div class="form-row">
+        <label class="col-md-3">ShipRegion</label>
+        <input required="true" asp-for="@Model.Order.Region" class="form-control col-md-9" />
+    </div>
+
+    <div class="form-row">
+        <label class="col-md-3">ShipCountry</label>
+        <input required="true" asp-for="@Model.Order.Country" class="form-control col-md-9" />
+    </div>
+
+    <div class="row mt-2">
+        <div class="col-md-5"></div>
+        <div class="col-md-2">
+            <button type="submit" class="btn btn-primary">Checkout</button>
+        </div>
+        <div class="col-md-5"></div>
+    </div>
+</form>

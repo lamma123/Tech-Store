@@ -1,0 +1,46 @@
+﻿@page
+@model SE1726_NET_SWP391_Group5.Pages.Admin.ManagerEmployeesModel
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@{
+}
+
+<div>
+        <table class="table mb-0 table-borderless tbl-server-info">
+            <tbody>
+                <tr>
+                    <td>Name</td>
+                    <td>Address</td>
+                    <td>Date of birth</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                @foreach (var em in Model.employees)
+                {
+                    <tr>
+                        <td>
+                            <div class="media align-items-center">
+                                <h5 class="ml-3">@em.EmployeeName</h5>
+                            </div>
+                        </td>
+                        <td>@em.Address</td>
+                        <td>@em.BirthDate.ToString("dd/MM/yyyy")</td>
+                        <td>
+                            <div class="media align-items-center">
+                                <div class="bg-secondary-light rounded-circle iq-card-icon-small mr-3"><i class="ri-mail-open-line m-0"></i></div>
+                                <div class="bg-primary-light rounded-circle iq-card-icon-small mr-3"><i class="ri-chat-3-line m-0"></i></div>
+                                <div class="bg-success-light rounded-circle iq-card-icon-small"><i class="ri-phone-line m-0"></i></div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="d-flex align-items-center">
+                                <a href="#" class="text-body"><i class="las la-pen mr-3"></i></a>
+                                <a href="#" class="text-body"><i class="las la-trash-alt mr-0"></i></a>
+                            </div>
+                        </td>
+                        
+                    </tr>
+                }
+            </tbody>
+        </table>
+</div>
+

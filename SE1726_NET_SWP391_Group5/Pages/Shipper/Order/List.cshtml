@@ -1,0 +1,158 @@
+﻿@page "{currentPage:int?}"
+@model SE1726_NET_SWP391_Group5.Pages.Shipper.Order.ListModel
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@{
+	ViewData["PageTitle"] = "Order List";
+	var pagingModel = new SE1726_NET_SWP391_Group5.Helpers.PagingModel()
+			{
+				currentPage = Model.currentPage,
+				countPages = Model.totalPages,
+				generateUrl = (int? currentPage) => (Model.dateFrom == default(DateTime) || Model.dateTo == default(DateTime)) ?
+					Url.Page("/Shipper/Order/Index", new { currentPage = currentPage })
+						: Url.Page("/Shipper/Order/List", new { currentPage = currentPage, dateFrom = Model.dateFrom, dateTo = Model.dateTo })
+			};
+	var dateFrom = Model.dateFrom;
+	var dateTo = Model.dateTo;
+
+	ViewData["msg"] = TempData["msg"];
+}
+<style>
+	#orders {
+		font-family: Arial, Helvetica, sans-serif;
+		border-collapse: collapse;
+		width: 100%;
+	}
+
+		#orders td, #orders th {
+			border: 1px solid #ddd;
+			padding: 8px;
+		}
+
+		#orders tr:nth-child(even) {
+			background-color: #f2f2f2;
+		}
+
+		#orders tr:hover {
+			background-color: #ddd;
+		}
+
+		#orders th {
+			padding-top: 12px;
+			padding-bottom: 12px;
+			text-align: left;
+			background-color: gray;
+			color: white;
+		}
+
+	#order-title {
+		line-height: 40px;
+		padding: 15px;
+	}
+
+	.custom-button {
+		background-color: #4CAF50; /* Màu nền */
+		color: white; /* Màu chữ */
+		padding: 10px 20px; /* Kích thước lề trong nút */
+		border: none; /* Loại bỏ viền */
+		border-radius: 4px; /* Bo tròn góc */
+		cursor: pointer; /* Hiển thị con trỏ khi rê chuột vào nút */
+	}
+
+</style>
+<h1 style="text-align:center;font-weight:bold">ACCEPTED ORDERS LIST</h1>
+<div class="content-main">
+	<div id="content-main-dashboard">
+		<div id="order-title" style="display: flex;">
+			<div>
+				<b>Filter by Order date:</b>
+				<form method="get">
+					<a style="font-weight:bold">From: </a>
+					<input asp-for="dateFrom" type="date" id="dateFrom" onchange="dateChange()" />
+					<a style="font-weight:bold">To: </a>
+					<input asp-for="dateTo" type="date" id="dateTo" onchange="dateChange()" />
+					<div class="msg-error" style="color:red;">@ViewData["msg"]</div>
+					<input style="margin-top:20px" type="submit" class="custom-button" value="Filter">
+				</form>
+			</div>
+		</div>
+
+		<div id="order-table">
+			@if (Model.orderList == null || Model.orderList.Count < 1)
+			{
+				<div style="margin: 1% 2%; color:red;" class="msg-error">Not found order(s)!</div>
+			}
+			else
+			{
+				<table id="orders">
+					<tr>
+						<th>Action</th>
+						<th>OrderID</th>
+						<th>CustomerID</th>
+						<th>Customer</th>
+						<th>EmployeeID</th>
+						<th>ShipperName</th>
+						<th>OrderDate</th>
+						<th>AcceptedDate</th>
+						<th>DeliveryDateFrom</th>
+						<th>DeliveryDateTo</th>
+						<th>Address</th>
+						<th>City</th>
+						<th>Region</th>
+						<th>Country</th>
+						<th>Status</th>
+					</tr>
+					@foreach (var o in Model.orderList)
+					{
+						<tr>
+							<td><a href="/Shipper/Order/Detail?status=3&id=@o.OrderId">Deliver This</a></td>
+							<td>@(o.OrderId == null? "" : o.OrderId)</td>
+							<td>@(o.CustomerId == null ? "" : o.Customer.CustomerId)</td>
+							<td>@(o.Customer == null ? "" : o.Customer.Name)</td>
+							<td>@(o.EmployeeId == null ? "" : o.Employee.EmployeeName)</td>
+							<td>@(o.ShipperId == null ? "" : o.Shipper.Name)</td>
+							<td>@(o.OrderDate.Value.ToString("dd-MM-yyyy"))</td>
+							<td>@(o.AcceptedDate == null ? "" : o.AcceptedDate.Value.ToString("dd-MM-yyyy"))</td>
+							<td>@(o.DeliveryDateFrom == null ? "" : o.DeliveryDateFrom.Value.ToString("dd-MM-yyyy"))</td>
+							<td>@(o.DeliveryDateTo == null ? "" : o.DeliveryDateTo.Value.ToString("dd-MM-yyyy"))</td>
+							<td>@o.Address</td>
+							<td>@o.City</td>
+							<td>@o.Region</td>
+							<td>@o.Country</td>
+							@switch (o.Status)
+							{
+								case 1:
+									<td>Pending</td>
+									break;
+								case 2:
+									<td>Accepted</td>
+									break;
+								case 3:
+									<td>Delivering</td>
+									break;
+								case 4:
+									<td>Delivered</td>
+									break;
+								case 5:
+									<td>Unable to deliver</td>
+									break;
+							}
+						</tr>
+					}
+				</table>
+			}
+		</div>
+		<div id="paging">
+			<div id="paging">
+				<partial name="_Paging" model="@pagingModel" />
+			</div>
+		</div>
+	</div>
+</div>
+
+<script>
+	function dateChange() {
+		var dFrom = document.getElementById("dateFrom").value;
+		var dTo = document.getElementById("dateTo").value;
+		console.log(link.href);
+	}
+</script>

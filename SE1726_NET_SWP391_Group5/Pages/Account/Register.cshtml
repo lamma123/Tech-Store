@@ -1,0 +1,55 @@
+﻿@page
+@model SE1726_NET_SWP391_Group5.Pages.Account.RegisterModel
+@{
+}
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@{
+}
+
+<div style="width: 400px;height:800px;background-color:blanchedalmond;margin: 80px auto;">
+    <h3 style="text-align: center;padding: 20px;font-weight:bold;">
+        Register
+    </h3>
+    <div style="margin: 20px 20px; color: red">@TempData["msg"]</div>
+    <form method="post">
+        <input asp-for="Customer.CustomerId" value="1" type="hidden" /><br />
+        <div style="margin: 20px 20px;">
+            <div>Email</div>
+            <input asp-for="Account.Email" type="text" style="width: 100%" />
+            <span class="msg-error" style="color:red" asp-validation-for="Account.Email"></span><br />
+        </div>
+        <div style="margin: 20px 20px;">
+            <div>Password</div>
+            <input asp-for="Account.Password" type="password" style="width: 100%" />
+            <span class="msg-error" style="color:red" asp-validation-for="Account.Password"></span><br />
+        </div>
+        <div style="margin: 20px 20px;">
+            <div>Name</div>
+            <input asp-for="Customer.Name" type="text" style="width: 100%" />
+        </div>
+        <div style="margin: 20px 20px;">
+            <div>Address</div>
+            <input asp-for="Customer.Address" type="text" style="width: 100%" />
+        </div>
+        <div style="margin: 20px 20px;">
+            <div>City</div>
+            <input asp-for="Customer.City" type="text" style="width: 100%" />
+        </div>
+        <div style="margin: 20px 20px;">
+            <div>Region</div>
+            <input asp-for="Customer.Region" type="text" style="width: 100%" />
+        </div>
+        <div style="margin: 20px 20px;">
+            <div>Country</div>
+            <input asp-for="Customer.Country" type="text" style="width: 100%" />
+        </div>
+        <div style="margin: 20px 20px;">
+            <div>Phone</div>
+            <input asp-for="Customer.Phone" type="text" style="width: 100%" />
+            <span class="msg-error" style="color:red" asp-validation-for="Customer.Phone"></span><br />
+        </div>
+        <div style="margin: 30px 20px;">
+            <input type="submit" value="Register" style="width: 100%" class="btn btn-success" />
+        </div>
+    </form>
+</div>
